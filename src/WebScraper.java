@@ -30,7 +30,7 @@ public class WebScraper {
     public static int wordCount(final String url) {
 
         String text = urlToString(url);
-        String[] wordArray = text.split(" ");
+        String[] wordArray = text.split("\\s+");
 
         return wordArray.length;
     }
